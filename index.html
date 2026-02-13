@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Redirecting...</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+        // --- CONFIGURATION START ---
+        
+        // Add your links here inside the quotes, separated by commas
+        var links = [
+            "https://www.youtube.com/watch?v=dQw4w9WgXcQ", 
+            "https://en.wikipedia.org/wiki/Special:Random",
+            "https://www.google.com/doodles",
+            "https://news.google.com" 
+        ];
+
+        // --- CONFIGURATION END ---
+
+        // Logic to pick a random link
+        var randomLink = links[Math.floor(Math.random() * links.length)];
+
+        // Perform the redirect
+        window.location.replace(randomLink);
+    </script>
+</head>
+<body>
+    <p style="font-family: sans-serif; text-align: center; margin-top: 50px;">
+        Wait a moment, we are picking a destination for you...
+    </p>
+</body>
+</html>
